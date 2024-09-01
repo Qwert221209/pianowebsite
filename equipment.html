@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipment</title>
+    <link rel="stylesheet" href="equipment.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="ham" id="ham" onclick="menu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="links" id="links">
+          <a href="index.html">Home</a>
+          <a href="basics.html">Basics</a>
+          <a href="readingsheetmusic.html">Reading sheet music</a>
+          <a href="pieces.html">Pieces</a>
+          <a href="motivation.html">Motivation</a>
+          <a class="current" href="equipment.html">Equipment</a>
+          <a href="communitysavings.html">Community savings</a>
+        </div>
+      </nav>
+      <h1>Equipment and pianos</h1>
+    </header>
+    <main>
+      <h2 class="anfang">Best pianos by pricing</h2>
+      <h3>Best piano for ca. 250€</h3>
+      <p>Casio CT-S300 <a href="#">Buy on Amazon</a></p>
+      
+      <h3>Best piano for ca. 500€</h3>
+      <p>Yamaha P-145 <a href="#">Buy on Amazon</a></p>
+      
+      <h3>Best piano for ca. 750€</h3>
+      <p>Classic Cantabile DP-A 610 <a href="#">Buy on Amazon</a></p>
+      
+      <h3>Best piano for ca. 1000€</h3>
+      <p>Yamaha ARIUS YDP-145 <a href="#">Buy on Amazon</a></p>
+      
+      <h3>Best piano for ca. 2000€</h3>
+      <p>Classic Cantabile GP-A 810 <a href="#">Buy on Amazon</a></p>
+      
+      <h2>Piano bench by pricing</h2>
+      <h3>Best piano bench for ca. 60€</h3>
+      <p>SONGMICS Klavierhocker höhenverstellbar <a href="#">Buy on Amazon</a></p>
+      
+      <h3>Best piano bench for ca. 150€</h3>
+      <p>REDCAMP höhenverstellbar klavierbank mit Lagerung <a href="#">Buy on Amazon</a></p>
+      
+      <h2>Best metronome by pricing</h2>
+      <h3>Best metronome for ca. 10€</h3>
+      <p>Alnicov Mini Digital Metronom <a href="#">Buy on Amazon</a></p>
+      
+      <h3>Best metronome for ca. 30€</h3>
+      <p>Mechanisches Metronom mit Glocke, LEKATO <a href="#">Buy on Amazon</a></p>
+      
+      <h2>Best headphones by pricing</h2>
+      <h3>Best headphones for ca. 50€</h3>
+      <p>Yamaha HPH-100B Kopfhörer <a href="#">Buy on Amazon</a></p>
+      
+      <h3>Best headphones for ca. 100€</h3>
+      <p>Yamaha HPH-150B <a href="#">Buy on Amazon</a></p>
+      
+      <h3>Best headphones for ca. 200€</h3>
+      <p>Yamaha HPH-MT7 Studio-Kopfhörer <a href="#">Buy on Amazon</a></p>
+      
+      <h2>Best piano pedals by pricing</h2>
+      <h3>Best pedal for 10€</h3>
+      <p>Rockjam Sustain Pedal <a href="#">Buy on Amazon</a></p>
+      
+      <h3>Best pedal for 150€</h3>
+      <p>Roland Keyboard Dreifach-Pedaleinheit <a href="#">Buy on Amazon</a></p>
+      
+    </main>
+
+    <footer>
+      <a href="legaldisclosure.html">Legal Disclusure</a>
+      <a href="privacypolicy.html">Privacy policy</a>
+    </footer>
+    <script>
+      function menu() {
+        let ham = document.getElementById("ham");
+        let links = document.getElementById("links");
+        links.classList.toggle("offen");
+        ham.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

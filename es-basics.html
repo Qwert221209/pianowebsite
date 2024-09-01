@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos</title>
+    <link rel="stylesheet" href="basics.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="ham" id="ham" onclick="menu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <div class="links" id="links">
+                <a href="es.html">Inicio</a>
+                <a class="current" href="es-basics.html">Fundamentos</a>
+                <a href="es-readingsheetmusic.html">Leer partituras</a>
+                <a href="es-pieces.html">Piezas</a>
+                <a href="es-motivation.html">Motivación</a>
+                <a href="es-equipment.html">Equipo</a>
+                <a href="es-communitysavings.html">Ahorros comunitarios</a>
+            </div>
+        </nav>
+        <h1>Fundamentos</h1>
+    </header>
+    <main>
+        <h2>Postura y posicionamiento de las manos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Cz0nGKwPDac?si=j2OSPtCOfDBTo_yd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <h2>Ejercicio básico para los dedos:</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uGIwJEnx0Lc?si=eQeoTmZE8DEtm4Ux" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <h2>Mantenimiento del piano</h2>
+        <div class="container">
+            <section id="introduction">
+                <p><strong>Información importante: ¡Los siguientes consejos solo se aplican a <em>pianos acústicos!</em></strong></p>
+                <p>El mantenimiento regular es crucial para asegurar que tu piano se mantenga en excelente estado de funcionamiento. Esta guía ofrece un resumen de los aspectos más importantes del mantenimiento del piano, incluyendo la afinación, la limpieza y las consideraciones ambientales.</p>
+            </section>
+    
+            <section id="tuning">
+                <h3>Afinación</h3>
+                <p>Los pianos deben ser afinados al menos dos veces al año. La afinación ajusta la tensión de las cuerdas del piano, que puede volverse desigual debido a cambios en la humedad y la temperatura. Aquí hay algunos puntos importantes sobre la afinación:</p>
+                <ul>
+                    <li>Se recomienda la afinación profesional para asegurar la precisión.</li>
+                    <li>Evita afinar el piano tú mismo a menos que tengas experiencia.</li>
+                    <li>Una afinación regular (dos veces al año) ayuda a prevenir daños al instrumento.</li>
+                </ul>
+            </section>
+    
+            <section id="cleaning">
+                <h3>Limpieza</h3>
+                <p>Mantener limpio tu piano es esencial tanto para su apariencia como para su funcionalidad. El polvo y la suciedad pueden acumularse en las teclas y dentro del piano, afectando su rendimiento. Sigue estos consejos de limpieza:</p>
+                <ul>
+                    <li>Utiliza un paño suave y seco para quitar el polvo de las teclas regularmente.</li>
+                    <li>Evita usar productos químicos agresivos o agua en las teclas.</li>
+                    <li>Limpia el exterior del piano con un paño suave y un limpiador suave y no abrasivo.</li>
+                </ul>
+            </section>
+    
+            <section id="environmental-considerations">
+                <h3>Consideraciones ambientales</h3>
+                <p>El entorno en el que se guarda tu piano juega un papel significativo en su longevidad. Los pianos son sensibles a los cambios en la temperatura y la humedad, lo que puede hacer que la madera se expanda o se contraiga, llevando a una inestabilidad en la afinación y posibles daños. Considera lo siguiente:</p>
+                <ul>
+                    <li>Mantén el piano en una habitación con niveles estables de temperatura y humedad.</li>
+                    <li>Evita colocar el piano cerca de ventanas, calefactores o ventilaciones.</li>
+                    <li>Utiliza un humidificador o deshumidificador para controlar la humedad de la habitación.</li>
+                    <li>Considera usar una funda para piano para proteger el instrumento del polvo y de los cambios ambientales.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a href="imprint.html">Impressum</a>
+        <a href="privacypolicy.html">Política de privacidad</a>
+    </footer>
+    <script>
+        function menu() {
+            let ham = document.getElementById("ham");
+            let links = document.getElementById("links");
+            links.classList.toggle("offen");
+            ham.classList.toggle("open");
+        }
+    </script>
+</body>
+</html>

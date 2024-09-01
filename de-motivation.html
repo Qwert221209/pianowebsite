@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motivation</title>
+    <link rel="stylesheet" href="motivation.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="ham" id="ham" onclick="menu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="links" id="links">
+          <a href="de.html">Startseite</a>
+          <a href="de-basics.html">Grundlagen</a>
+          <a href="de-readingsheetmusic.html">Notenlesen</a>
+          <a href="de-pieces.html">Stücke</a>
+          <a class="current" href="de-motivation.html">Motivation</a>
+          <a href="de-equipment.html">Ausrüstung</a>
+          <a href="de-communitysavings.html">Gemeinschaftsersparnisse</a>
+        </div>
+      </nav>
+      <h1>Motivation</h1>
+    </header>
+    <main>
+      <section>
+        <h2>1. Setze klare Ziele</h2>
+        <p>Das Festlegen spezifischer und erreichbarer Ziele kann dich fokussiert und motiviert halten. Überlege, sowohl kurzfristige als auch langfristige Ziele zu setzen, wie zum Beispiel:</p>
+        <ul>
+            <li>Jeden Monat ein neues Stück lernen.</li>
+            <li>Deine Notenlesefähigkeiten verbessern.</li>
+            <li>Vor Freunden oder Familie auftreten.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>2. Finde Inspiration</h2>
+        <p>Inspiration kann aus verschiedenen Quellen kommen. Halte deine Leidenschaft am Leben, indem du:</p>
+        <ul>
+            <li>Deine Lieblingsklavierstücke hörst.</li>
+            <li>Live-Klavieraufführungen oder Konzerte besuchst.</li>
+            <li>Videos von Pianisten ansiehst, die du bewunderst.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>3. Erstelle eine Übungsroutine</h2>
+        <p>Konstanz ist der Schlüssel. Etabliere eine regelmäßige Übungsroutine, die in deinen Zeitplan passt. Beachte die folgenden Tipps:</p>
+        <ul>
+            <li>Übe jeden Tag zur gleichen Zeit.</li>
+            <li>Teile deine Übung in überschaubare Sitzungen auf.</li>
+            <li>Integriere Aufwärmübungen, technische Übungen und Repertoireübungen.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>4. Feiere deine Fortschritte</h2>
+        <p>Erkenne deine Erfolge an, um motiviert zu bleiben. Feiere Meilensteine wie:</p>
+        <ul>
+            <li>Das erfolgreiche Lernen eines herausfordernden Stücks.</li>
+            <li>Die Verbesserung deiner Technik oder Notenlesefähigkeiten.</li>
+            <li>Positives Feedback von anderen zu erhalten.</li>
+        </ul>
+      </section>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ppYnYCAghTw?si=H4ek_MY7dSiKZddf" title="YouTube-Video-Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+    <footer>
+      <a href="legaldisclosure.html">Impressum</a>
+      <a href="privacypolicy.html">Datenschutzerklärung</a>
+    </footer>
+    <script>
+      function menu() {
+        let ham = document.getElementById("ham");
+        let links = document.getElementById("links");
+        links.classList.toggle("offen");
+        ham.classList.toggle("offen");
+      }
+    </script>
+  </body>
+</html>

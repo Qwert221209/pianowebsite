@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esta página web te enseña cómo aprender a tocar el piano, cómo leer partituras, qué piezas deberías aprender y mucho más. ¡No se requiere iniciar sesión y la página es gratuita!"
+    />
+    <title>lernpiano.online</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Aprende piano en línea</h1>
+      <h2>¡No se requiere iniciar sesión, uso gratuito!</h2>
+      <select name="language" id="language" onchange="navigateToPage()"">
+        <option value="index.html">English</option>
+        <option value="de.html">Deutsch</option>
+        <option value="es.html" selected>Español</option>
+      </select>
+    </header>
+    <main>
+      <nav>
+        <div class="links">
+          <button onclick="window.location.href='es-basics.html';">
+            Conceptos básicos
+          </button>
+          <p class="txtlinks">Si nunca has tomado una clase de piano</p>
+        </div>
+
+        <div class="rechts">
+          <button onclick="window.location.href='es-readingsheetmusic.html';">
+            Leer partituras
+          </button>
+          <p class="txtrechts">Si no puedes leer partituras con fluidez</p>
+        </div>
+
+        <div class="vertical">
+          <button onclick="window.location.href='es-pieces.html';">Piezas</button>
+          <p>
+            Si has terminado la sección de conceptos básicos y puedes leer partituras con fluidez
+          </p>
+        </div>
+
+        <div class="vertical">
+          <button onclick="window.location.href='es-motivation.html';">
+            Motivación
+          </button>
+          <p>Si ya no quieres aprender a tocar el piano</p>
+        </div>
+
+        <div class="vertical">
+          <button onclick="window.location.href='es-equipment.html';">
+            Equipamiento
+          </button>
+          <p>Equipamiento que es bueno tener</p>
+        </div>
+
+        <div class="vertical">
+          <button onclick="window.location.href='es-communitysavings.html';">
+            Ahorros comunitarios
+          </button>
+          <p>Para apoyarme</p>
+        </div>
+      </nav>
+    </main>
+    <footer>
+      <a href="imprint.html">Imprint</a>
+      <a href="privacypolicy.html">Política de privacidad</a>
+    </footer>
+    <script>
+function navigateToPage() {
+  var selectElement = document.getElementById("language");
+  var selectedValue = selectElement.value;
+  window.location.href = selectedValue;
+}
+    </script>
+  </body>
+</html>

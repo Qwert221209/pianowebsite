@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motivación</title>
+    <link rel="stylesheet" href="motivation.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="ham" id="ham" onclick="menu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="links" id="links">
+          <a href="es.html">Inicio</a>
+          <a href="es-basics.html">Conceptos básicos</a>
+          <a href="es-readingsheetmusic.html">Leer partituras</a>
+          <a href="es-pieces.html">Piezas</a>
+          <a class="current" href="es-motivation.html">Motivación</a>
+          <a href="es-equipment.html">Equipo</a>
+          <a href="es-communitysavings.html">Ahorros comunitarios</a>
+        </div>
+      </nav>
+      <h1>Motivación</h1>
+    </header>
+    <main>
+      <section>
+        <h2>1. Establece metas claras</h2>
+        <p>Establecer metas específicas y alcanzables puede mantenerte enfocado y motivado. Considera fijar tanto metas a corto como a largo plazo, como por ejemplo:</p>
+        <ul>
+            <li>Aprender una nueva pieza cada mes.</li>
+            <li>Mejorar tus habilidades de lectura a primera vista.</li>
+            <li>Actuar frente a amigos o familiares.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>2. Encuentra inspiración</h2>
+        <p>La inspiración puede venir de diversas fuentes. Mantén viva tu pasión:</p>
+        <ul>
+            <li>Escucha tus piezas de piano favoritas.</li>
+            <li>Asiste a actuaciones o conciertos de piano en vivo.</li>
+            <li>Mira videos de pianistas que admiras.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>3. Crea una rutina de práctica</h2>
+        <p>La constancia es clave. Establece una rutina de práctica regular que se ajuste a tu horario. Considera los siguientes consejos:</p>
+        <ul>
+            <li>Practica a la misma hora cada día.</li>
+            <li>Divide tu práctica en sesiones manejables.</li>
+            <li>Incluye calentamientos, ejercicios técnicos y práctica de repertorio.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>4. Celebra tus avances</h2>
+        <p>Reconoce tus logros para mantenerte motivado. Celebra hitos como:</p>
+        <ul>
+            <li>Aprender con éxito una pieza desafiante.</li>
+            <li>Mejorar tu técnica o habilidades de lectura a primera vista.</li>
+            <li>Recibir comentarios positivos de otros.</li>
+        </ul>
+      </section>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ppYnYCAghTw?si=H4ek_MY7dSiKZddf" title="Reproductor de video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </main>
+    <footer>
+      <a href="legaldisclosure.html">Aviso Legal</a>
+      <a href="privacypolicy.html">Política de privacidad</a>
+    </footer>
+    <script>
+      function menu() {
+        let ham = document.getElementById("ham");
+        let links = document.getElementById("links");
+        links.classList.toggle("abierto");
+        ham.classList.toggle("abierto");
+      }
+    </script>
+  </body>
+</html>

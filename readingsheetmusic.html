@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading sheet music</title>
+    <link rel="stylesheet" href="readingsheetmusic.css" />
+    <meta name="description" content="This website teaches you how to play the piano. You will also learn how to read sheet music, what pieces you should play and much more. You don't need an account for this website and it is free to use!">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="ham" id="ham" onclick="menu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="links" id="links">
+          <a href="index.html">Home</a>
+          <a href="basics.html">Basics</a>
+          <a class="current" href="readingsheetmusic.html">Reading sheet music</a>
+          <a href="pieces.html">Pieces</a>
+          <a href="motivation.html">Motivation</a>
+          <a href="equipment.html">Equipment</a>
+          <a href="communitysavings.html">Community savings</a>
+        </div>
+      </nav>
+      <h1>Reading sheet music</h1>
+      <p class="abstand warnung"><strong>Important info: </strong>On this website I use the <strong><em>german musical note system! </em></strong>In comparison to the american musical note system the german note system uses instead of b the letter h and instead of b flat the letter b!</p>
+    </header>
+    <main>
+      <section class="kapitel">
+        <h2>Chapters</h2>
+        <a href="#howToReadSheetMusic">How to read musical notes?</a>
+        <a href="#noteValue">Note value</a>
+        <a href="#musicalRests">Musical rests</a>
+        <a href="#clefs">Clefs</a>
+        <a href="#timeSignature">Time signature</a>
+        <a href="#steps">Half steps and whole steps</a>
+        <a href="#accidentials">Accidentials</a>
+        <a href="#howToPracticeReadingSheetMusic">How to practice reading sheet music?</a>
+        <a href="#game">Game</a>
+      </section>
+      <section class="howToReadSheetMusic" id="howToReadSheetMusic">
+        <h2>How to read musical notes?</h2>
+        <p>Every note has a name and a specific key on the piano. The assignment of the musical notes to the piano keys continues logically <strong>to the right:</strong></p>
+        <img src="img/noteCMakiertundNotenVonCBisH.jpg" alt="loading error"/>
+        <p>Below an overview about the key names on the keyboard:</p>
+        <img src="img/klaviaturMitNamen.jpg" alt="loading error"/>
+        <p>Try to play following melodie very slowly with your right hand. Help yourself with <a href="#howToReadSheetMusic">this</a> picture. The numbers below the notes represent the finger you should play the note with:</p>
+          <table>
+            <tr>
+              <td>Thumb</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>Index Finger</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Middle Finger</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>Ring Finger</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Pinky</td>
+              <td>5</td>
+            </tr>
+        </table>
+        <img src="img/easyMelody.png" alt="loading error">
+      </section>
+      <section id="noteValue">
+        <h2>Note Value</h2>
+        <p class="abstand">Musical note values on the piano refer to the duration for which a note is held or played. Each note value has a specific time duration relative to the beat of the music, which is determined by the<br><a href="#timeSignature">time signature</a>. Here's an overview of the most common note values:</p>
+                <h3>1. Whole Note (Semibreve)</h3>
+                <ul>
+                    <li><strong>Symbol:</strong> An open circle with no stem.</li>
+                    <li><strong>Duration:</strong> The longest note value, holding for four beats in common time (4/4).</li>
+                    <li><strong>On the Piano:</strong> When you play a whole note, you hold down the key for four beats.</li>
+                </ul>
+                <h3>2. Half Note (Minim)</h3>
+                <ul>
+                    <li><strong>Symbol:</strong> An open circle with a stem.</li>
+                    <li><strong>Duration:</strong> Holds for two beats in common time.</li>
+                    <li><strong>On the Piano:</strong> Press and hold the key for two beats.</li>
+                </ul>
+                <h3>3. Quarter Note (Crotchet)</h3>
+                <ul>
+                    <li><strong>Symbol:</strong> A filled-in circle with a stem.</li>
+                    <li><strong>Duration:</strong> Holds for one beat in common time.</li>
+                    <li><strong>On the Piano:</strong> Press and hold the key for one beat.</li>
+                </ul>
+                <h3>4. Eighth Note (Quaver)</h3>
+                <ul>
+                    <li><strong>Symbol:</strong> A filled-in circle with a stem and one flag.</li>
+                    <li><strong>Duration:</strong> Holds for half a beat in common time.</li>
+                    <li><strong>On the Piano:</strong> Press and hold the key for half a beat. Often played in pairs or groups.</li>
+                </ul>
+                <h3>5. Sixteenth Note (Semiquaver)</h3>
+                <ul>
+                    <li><strong>Symbol:</strong> A filled-in circle with a stem and two flags.</li>
+                    <li><strong>Duration:</strong> Holds for a quarter of a beat in common time.</li>
+                    <li><strong>On the Piano:</strong> Press and hold the key for a quarter of a beat. These notes are usually played quickly.</li>
+                </ul>
+                <h3>6. Dotted Notes</h3>
+                <ul>
+                    <li><strong>Symbol:</strong> A dot placed directly after a note.</li>
+                    <li><strong>Effect:</strong> The dot increases the duration of the note by half of its original value.</li>
+                    <li><strong>Example:</strong> A dotted half note lasts for three beats (two beats for the half note + one extra beat).</li>
+                </ul>
+                <h3>7. Tied Notes</h3>
+                <ul>
+                    <li><strong>Symbol:</strong> A curved line connecting two notes of the same pitch.</li>
+                    <li><strong>Effect:</strong> The notes are played as a single note with a combined duration.</li>
+                    <li><strong>On the Piano:</strong> Hold the key for the total duration of the tied notes.</li>
+                </ul>
+                <p>Below an overview about the note values:</p>
+                <img src="img/noteValue.png" alt="loading error" class="original">
+                <img src="img/noteValueHalf1.png" alt="loading error" class="replacement">
+                <img src="img/noteValueHalf2.png" alt="loading error" class="replacement">
+                <p>All of the above shown sections of music (whole note, half note, quarter note, eighth note, sixteenth note) take the same time to play (four beats).</p>
+    </section>
+    
+      <section class="musicalRests" id="musicalRests">
+        <h2>Musical rests</h2>
+        <ul>
+          <p>Rest Symbols indicate silence and have equivalent durations to the corresponding notes:</p>
+          <li><strong>Whole Rest:</strong> Silence for four beats.</li>
+          <li><strong>Half Rest:</strong> Silence for two beats.</li>
+          <li><strong>Quarter Rest:</strong> Silence for one beat.</li>
+          <li><strong>Eighth Rest:</strong> Silence for half a beat.</li>
+          <li><strong>Sixteenth Rest:</strong> Silence for a quarter of a beat.</li>
+      </ul>
+      <p>Below you can see all commonly used musical rests:</p>
+      <img src="img/musicalRests.png" alt="loading error" class="originall">
+      <img src="img/musicalRestsHalf1.png" alt="loading error" class="replacementt">
+      <img src="img/musicalRestsHalf2.png" alt="loading error" class="replacementt">
+      </section>
+      <section class="clefs" id="clefs">
+        <h2>Clefs</h2>
+        <p>
+            In music notation, a <strong>clef</strong> is a symbol placed at the beginning of the staff to indicate the pitch of the notes written on it. The clef is essential for musicians to understand the key in which a piece of music should be played or sung. There are several types of clefs, each serving a different purpose depending on the instrument or voice range.
+        </p>
+    
+        <h3>Types of Musical Clefs</h2>
+    
+        <p>
+            The two most common musical clefs are:
+        </p>
+    
+        <ul>
+            <li>
+                <span class="clef-symbol">&#119070;</span> 
+                <strong>Treble Clef</strong>: Also known as the G clef, the treble clef is used for higher-pitched instruments such as the violin, flute, and trumpet. It is also used for the right hand in piano music.
+            </li>
+            <li>
+                <span class="clef-symbol">&#119074;</span> 
+                <strong>Bass Clef</strong>: Also known as the F clef, the bass clef is used for lower-pitched instruments like the cello, bassoon, and tuba. It is also used for the left hand in piano music.
+            </li>
+            <p>Below an example of both clefs. After both clefs is written the middle C:</p>
+            </ul>
+            <img src="img/clefs.png" alt="loading error" id="clefImg">
+      </section>
+      <section class="timeSignature" id="timeSignature"> 
+        <h2>Time signature</h2>
+        <p class="abstand">The time signature indicates the rhythm of a piece. Located at the beginning of the piece, right after the clef, it consists of two numbers stacked vertically. The top number tells you how many beats are in each measure, while the bottom number indicates which note value receives one beat.</p>
+        
+        <h3>Common time signatures</h3>
+        <ul>
+            <li><strong>4/4 (Common Time)</strong>: Four beats per measure, with each beat as a quarter note. It is the most widely used time signature.</li>
+            <li><strong>3/4 (Waltz Time)</strong>: Three beats per measure, giving a flowing, dance-like rhythm often found in waltzes.</li>
+            <li><strong>2/4 (March Time)</strong>: Two beats per measure, creating a straightforward, marching feel.</li>
+            <li><strong>6/8 (Compound Time)</strong>: Six beats per measure, often felt as two groups of three, giving a rolling or swinging rhythm.</li>
+        </ul>
+        
+        <h3>How to practice time signatures</h3>
+        <ul>
+            <li><strong>Clap or Tap the Rhythm</strong>: Internalize the beat by clapping or tapping the rhythm before playing.</li>
+            <li><strong>Count Aloud</strong>: Counting aloud helps ensure accuracy, especially in more complex time signatures.</li>
+            <li><strong>Use a Metronome</strong>: Practicing with a metronome reinforces a steady tempo.</li>
+            <li><strong>Start Slow</strong>: Begin at a slower tempo to focus on timing, then gradually increase speed.</li>
+        </ul>
+      </section>
+      <section id="steps">
+        <h2>Half Steps and Whole Steps</h2>
+        <p>
+          In music, the distance between two notes is measured in <strong>steps</strong>. There are two main types: <strong>half steps</strong> and <strong>whole steps</strong>.
+        </p>
+      
+        <h3>Half Steps</h3>
+        <p>
+          A <strong>half step</strong> is the smallest interval in Western music. It is the distance between two adjacent keys on the piano, whether white to black, black to  white or white  to white (like E to F or B to C). For example, the distance from C to C♯ is a half step.
+        </p>
+      
+        <h3>Whole Steps</h3>
+        <p>
+          A <strong>whole step</strong> consists of two half steps. It's the distance between two keys with one key in between. For example, the distance from C to D is a whole step, as it includes the notes C to C♯ (half step) and C♯ to D (half step).
+        </p>
+      
+        <p>
+          Below is a visual representation of half steps and whole steps on a keyboard:
+        </p>
+        <img src="img/halfWholeStep.jpg" alt="loading error" id="stepsImg"/>
+      </section>
+        <section id="accidentials">
+          <h2>Accidentals</h2>
+          <p>
+            In music, <strong>accidentals</strong> are symbols that modify the pitch of a note. They are used to raise, lower, or return a note to its natural state, and they appear directly before the note they affect. Accidentals are essential for creating musical expression, adding variety and complexity to compositions.
+          </p>
+        
+          <h3>Types of Accidentals</h3>
+          <ul>
+            <li><strong>Sharp (♯):</strong> Raises the pitch of a note by one half step. For example, a C♯ is one half step higher than C.</li>
+            <li><strong>Flat (♭):</strong> Lowers the pitch of a note by one half step. For instance, a B♭ is one half step lower than B.</li>
+            <li><strong>Natural (♮):</strong> Cancels any previous sharps or flats and returns the note to its original pitch. If a note was previously sharp or flat in a measure, the natural sign returns it to its unaltered state.</li>
+            <li><strong>Double Sharp (𝄪):</strong> Raises the pitch of a note by two half steps (or one whole step). For example, a F𝄪 is two half steps higher than F, which is the same pitch as G.</li>
+            <li><strong>Double Flat (𝄫):</strong> Lowers the pitch of a note by two half steps (or one whole step). For example, a G𝄫 is two half steps lower than G, which is the same pitch as F.</li>
+          </ul>
+          <p>You will often see a group of accidentials right after the clef. These accidentials apply to the whole peace and indicate the key of the peace. More about this in the maybe comming chapter about <a href="communitysavings.html">music theory</a>
+          </p>
+          <h3>How Accidentals Are Used</h3>
+          <p>
+            Accidentals are usually written immediately before the note they modify and apply to that note for the remainder of the measure. In subsequent measures, unless an accidental is written again, the note returns to its natural state according to the key signature.
+          </p>
+          <p>
+            For example, in the key of C major, a G♯ would be an accidental since G is normally natural in this key. If the piece moves to another measure without a sharp or natural sign, G would revert back to its natural state.
+          </p>
+        
+          <h3>Visual Examples of Accidentals</h3>
+          <p>
+            Below is an image showing the different types of accidentals on a musical staff:
+          </p>
+          <img src="img/accidentals.png" alt="loading error" id="accidentalsImg"/>
+          <p>Accidentials like in the image above apply only for the measure they are in and do not carry over to subsequent measure.</p>
+      </section>
+      <section id="howToPracticeReadingSheetMusic">
+          <h2>How to practice reading sheet music?</h2>
+          <p>
+            Learning to read sheet music is a crucial skill for any musician. Here are some strategies to improve your sight-reading abilities:
+          </p>
+        
+          <h3>1. Start with Simple Pieces</h3>
+          <p class="abstand">
+            Begin by practicing with simple pieces or exercises that are well within your skill level. Focus on reading both the notes and rhythms accurately. As you become more confident, gradually increase the difficulty of the music you practice.
+          </p>
+        
+          <h3>2. Use a Metronome</h3>
+          <p>
+            A metronome is an excellent tool for developing a steady sense of timing. Start at a slow tempo and focus on maintaining a consistent pace as you read through the music. As you improve, you can gradually increase the speed.
+          </p>
+        
+          <h3>3. Practice Regularly</h3>
+          <p>
+            Consistent practice is key to improvement. Set aside time each day to practice reading sheet music. Even 10-15 minutes of focused practice can make a significant difference over time.
+          </p>
+        
+          <h3>4. Analyze the Music Before Playing</h3>
+          <p>
+            Before you start playing, take a moment to look over the music. Identify key signatures, time signatures, and any accidentals or challenging sections. This pre-analysis will help you anticipate what’s coming and improve your sight-reading accuracy.
+          </p>
+        
+          <h3>5. Practice Sight-Reading</h3>
+          <p>
+            Sight-reading involves playing a piece of music you have never seen before, as accurately as possible. To practice this, regularly challenge yourself with new music. Try to read and play the notes as smoothly as possible, without stopping to correct mistakes.
+          </p>
+
+          <h3>Downloads</h3>
+          <p><strong><em>Download an an easy piece for free <a href="img/easyPianoPiece.png" download>here</a></em></strong></p>
+          <p><strong><em>Download an a bit piece harder for free <a href="img/harderPianoPiece.png" download>here</a></em></strong></p>
+      </section>
+      <h2 id="game">Game</h2>
+      <p>Play the note shown below on the virtual keyboard.</p>
+      <div id="note-display"></div>
+      <div class="container">
+        <div class="keyboard">
+          <div class="key white" data-note="C"></div>
+          <div class="key black" data-note="C#"></div>
+          <div class="key white" data-note="D"></div>
+          <div class="key black" data-note="D#"></div>
+          <div class="key white" data-note="E"></div>
+          <div class="key white" data-note="F"></div>
+          <div class="key black" data-note="F#"></div>
+          <div class="key white" data-note="G"></div>
+          <div class="key black" data-note="G#"></div>
+          <div class="key white" data-note="A"></div>
+          <div class="key black" data-note="A#"></div>
+          <div class="key white" data-note="B"></div>
+        </div>
+      </div>
+      <section class="korrektundinkorrekt">
+        <div id="correct-count">Correct notes: 0</div>
+        <div id="incorrect-count">Wrong notes: 0</div>
+      </section>
+      <script src="readingsheetmusic.js"></script>
+    </main>
+    <footer>
+      <a href="legaldisclosure.html">Legal Disclusure</a>
+      <a href="privacypolicy.html">Privacy policy</a>
+    </footer>
+    <script>
+      function menu() {
+        let ham = document.getElementById("ham");
+        let links = document.getElementById("links");
+        links.classList.toggle("offen");
+        ham.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

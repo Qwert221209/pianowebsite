@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipo</title>
+    <link rel="stylesheet" href="equipment.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="ham" id="ham" onclick="menu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="links" id="links">
+          <a href="es.html">Inicio</a>
+          <a href="es-basics.html">Conceptos Básicos</a>
+          <a href="es-readingsheetmusic.html">Leer Partituras</a>
+          <a href="es-pieces.html">Piezas</a>
+          <a href="es-motivation.html">Motivación</a>
+          <a class="current" href="es-equipment.html">Equipo</a>
+          <a href="es-communitysavings.html">Ahorros comunitarios</a>
+        </div>
+      </nav>
+      <h1>Equipo y Pianos</h1>
+    </header>
+    <main>
+      <h2 class="anfang">Mejores pianos por precio</h2>
+      <h3>Mejor piano por unos 250€</h3>
+      <p>Casio CT-S300 <a href="#">Comprar en Amazon</a></p>
+      
+      <h3>Mejor piano por unos 500€</h3>
+      <p>Yamaha P-145 <a href="#">Comprar en Amazon</a></p>
+      
+      <h3>Mejor piano por unos 750€</h3>
+      <p>Classic Cantabile DP-A 610 <a href="#">Comprar en Amazon</a></p>
+      
+      <h3>Mejor piano por unos 1000€</h3>
+      <p>Yamaha ARIUS YDP-145 <a href="#">Comprar en Amazon</a></p>
+      
+      <h3>Mejor piano por unos 2000€</h3>
+      <p>Classic Cantabile GP-A 810 <a href="#">Comprar en Amazon</a></p>
+      
+      <h2>Banco de piano por precio</h2>
+      <h3>Mejor banco de piano por unos 60€</h3>
+      <p>SONGMICS Banco de piano ajustable <a href="#">Comprar en Amazon</a></p>
+      
+      <h3>Mejor banco de piano por unos 150€</h3>
+      <p>REDCAMP banco de piano ajustable con almacenamiento <a href="#">Comprar en Amazon</a></p>
+      
+      <h2>Mejor metrónomo por precio</h2>
+      <h3>Mejor metrónomo por unos 10€</h3>
+      <p>Alnicov Mini Metrónomo Digital <a href="#">Comprar en Amazon</a></p>
+      
+      <h3>Mejor metrónomo por unos 30€</h3>
+      <p>Metrónomo Mecánico con Campana, LEKATO <a href="#">Comprar en Amazon</a></p>
+      
+      <h2>Mejores auriculares por precio</h2>
+      <h3>Mejores auriculares por unos 50€</h3>
+      <p>Yamaha HPH-100B Auriculares <a href="#">Comprar en Amazon</a></p>
+      
+      <h3>Mejores auriculares por unos 100€</h3>
+      <p>Yamaha HPH-150B <a href="#">Comprar en Amazon</a></p>
+      
+      <h3>Mejores auriculares por unos 200€</h3>
+      <p>Yamaha HPH-MT7 Auriculares de Estudio <a href="#">Comprar en Amazon</a></p>
+      
+      <h2>Mejores pedales de piano por precio</h2>
+      <h3>Mejor pedal por 10€</h3>
+      <p>Rockjam Pedal de Sustain <a href="#">Comprar en Amazon</a></p>
+      
+      <h3>Mejor pedal por 150€</h3>
+      <p>Roland Unidad de Pedales Triple para Teclado <a href="#">Comprar en Amazon</a></p>
+      
+    </main>
+
+    <footer>
+      <a href="legaldisclosure.html">Impresión Legal</a>
+      <a href="privacypolicy.html">Política de Privacidad</a>
+    </footer>
+    <script>
+      function menu() {
+        let ham = document.getElementById("ham");
+        let links = document.getElementById("links");
+        links.classList.toggle("abierto");
+        ham.classList.toggle("abierto");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics</title>
+    <link rel="stylesheet" href="basics.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="ham" id="ham" onclick="menu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <div class="links" id="links">
+                <a href="index.html">Home</a>
+                <a class="current" href="basics.html">Basics</a>
+                <a href="readingsheetmusic.html">Reading sheet music</a>
+                <a href="pieces.html">Pieces</a>
+                <a href="motivation.html">Motivation</a>
+                <a href="equipment.html">Equipment</a>
+                <a href="communitysavings.html">Community savings</a>
+            </div>
+        </nav>
+        <h1>Basics</h1>
+    </header>
+    <main>
+        <h2>Posture and hand positioning</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/E_70ezPjaUw?si=Vq7d-LqksCRS6OQp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Basic finger exercise:</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4AUaZBn0uWQ?si=hB56m1a6D8Qfh4K3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Piano maintenance</h2>
+        <div class="container">
+            <section id="introduction">
+                <p><strong>Important info: The following tips only apply to <em>acoustic pianos!</em></strong></p>
+                <p>Regular maintenance is crucial for ensuring that your piano remains in excellent playing condition. This guide provides an overview of the most important aspects of piano maintenance, including tuning, cleaning, and environmental considerations.</p>
+            </section>
+    
+            <section id="tuning">
+                <h3>Tuning</h3>
+                <p>Pianos should be tuned at least twice a year. Tuning adjusts the tension of the piano strings, which can become uneven due to changes in humidity and temperature. Here are some important points about tuning:</p>
+                <ul>
+                    <li>Professional tuning is recommended to ensure accuracy.</li>
+                    <li>Avoid tuning the piano yourself unless you are experienced.</li>
+                    <li>Regular tuning (twice a year) helps prevent damage to the instrument.</li>
+                </ul>
+            </section>
+    
+            <section id="cleaning">
+                <h3>Cleaning</h3>
+                <p>Keeping your piano clean is essential for both its appearance and functionality. Dust and dirt can accumulate on the keys and inside the piano, affecting its performance. Follow these cleaning tips:</p>
+                <ul>
+                    <li>Use a soft, dry cloth to dust the keys regularly.</li>
+                    <li>Avoid using harsh chemicals or water on the keys.</li>
+                    <li>Clean the piano's exterior with a soft cloth and a mild, non-abrasive cleaner.</li>
+                </ul>
+            </section>
+    
+            <section id="environmental-considerations">
+                <h3>Environmental</h3>
+                <p>The environment in which your piano is kept plays a significant role in its longevity. Pianos are sensitive to changes in temperature and humidity, which can cause the wood to expand or contract, leading to tuning instability and potential damage. Consider the following:</p>
+                <ul>
+                    <li>Keep the piano in a room with stable temperature and humidity levels.</li>
+                    <li>Avoid placing the piano near windows, heaters, or air vents.</li>
+                    <li>Use a humidifier or dehumidifier to control the room's humidity.</li>
+                    <li>Consider using a piano cover to protect the instrument from dust and environmental changes.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a href="imprint.html">Imprint</a>
+        <a href="privacypolicy.html">Privacy policy</a>
+      </footer>
+    <script>
+        function menu() {
+            let ham = document.getElementById("ham");
+            let links = document.getElementById("links");
+            links.classList.toggle("offen");
+            ham.classList.toggle("open");
+        }
+    </script>
+</body>
+</html>

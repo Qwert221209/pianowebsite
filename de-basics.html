@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grundlagen</title>
+    <link rel="stylesheet" href="basics.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="ham" id="ham" onclick="menu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <div class="links" id="links">
+                <a href="de.html">Startseite</a>
+                <a class="current" href="de-basics.html">Grundlagen</a>
+                <a href="de-readingsheetmusic.html">Noten lesen</a>
+                <a href="de-pieces.html">Stücke</a>
+                <a href="de-motivation.html">Motivation</a>
+                <a href="de-equipment.html">Ausrüstung</a>
+                <a href="de-communitysavings.html">Gemeinschaftsersparnisse</a>
+            </div>
+        </nav>
+        <h1>Grundlagen</h1>
+    </header>
+    <main>
+        <h2>Haltung und Handpositionierung</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VCOpqQyVM0w?si=B2b-A6tL1D48cXYu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        <h2>Grundübung für die Finger:</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TZPNS-5FNiA?si=EVtNaRUOa9Orqg6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        <h2>Klavierpflege</h2>
+        <div class="container">
+            <section id="introduction">
+                <p><strong>Wichtige Information: Die folgenden Tipps gelten nur für <em>akustische Klaviere!</em></strong></p>
+                <p>Regelmäßige Wartung ist entscheidend, um sicherzustellen, dass Ihr Klavier in ausgezeichnetem Spielzustand bleibt. Dieser Leitfaden bietet einen Überblick über die wichtigsten Aspekte der Klavierpflege, einschließlich Stimmung, Reinigung und Umweltbedingungen.</p>
+            </section>
+    
+            <section id="tuning">
+                <h3>Stimmung</h3>
+                <p>Klaviere sollten mindestens zweimal im Jahr gestimmt werden. Die Stimmung passt die Spannung der Klavier-Saiten an, die durch Änderungen der Luftfeuchtigkeit und Temperatur ungleichmäßig werden können. Hier sind einige wichtige Punkte zur Stimmung:</p>
+                <ul>
+                    <li>Professionelle Stimmung wird empfohlen, um Genauigkeit zu gewährleisten.</li>
+                    <li>Vermeiden Sie es, das Klavier selbst zu stimmen, es sei denn, Sie sind erfahren.</li>
+                    <li>Regelmäßige Stimmung (zweimal im Jahr) hilft, Schäden am Instrument zu verhindern.</li>
+                </ul>
+            </section>
+    
+            <section id="cleaning">
+                <h3>Reinigung</h3>
+                <p>Das Klavier sauber zu halten, ist sowohl für das Aussehen als auch für die Funktionalität wichtig. Staub und Schmutz können sich auf den Tasten und im Inneren des Klaviers ansammeln, was die Funktionalität beeinträchtigen kann. Befolgen Sie diese Reinigungstipps:</p>
+                <ul>
+                    <li>Verwenden Sie ein weiches, trockenes Tuch, um die Tasten regelmäßig abzustauben.</li>
+                    <li>Vermeiden Sie es, scharfe Chemikalien oder Wasser auf den Tasten zu verwenden.</li>
+                    <li>Reinigen Sie das Äußere des Klaviers mit einem weichen Tuch und einem milden, nicht abrasiven Reinigungsmittel.</li>
+                </ul>
+            </section>
+    
+            <section id="environmental-considerations">
+                <h3>Umweltbedingungen</h3>
+                <p>Die Umgebung, in der Ihr Klavier aufbewahrt wird, spielt eine bedeutende Rolle für seine Lebensdauer. Klaviere sind empfindlich gegenüber Änderungen der Temperatur und Luftfeuchtigkeit, die dazu führen können, dass das Holz sich ausdehnt oder zusammenzieht, was zu Stimmungsinstabilität und möglichen Schäden führen kann. Berücksichtigen Sie Folgendes:</p>
+                <ul>
+                    <li>Halten Sie das Klavier in einem Raum mit stabilen Temperatur- und Feuchtigkeitswerten.</li>
+                    <li>Vermeiden Sie es, das Klavier in der Nähe von Fenstern, Heizkörpern oder Luftöffnungen zu platzieren.</li>
+                    <li>Verwenden Sie einen Luftbefeuchter oder einen Entfeuchter, um die Luftfeuchtigkeit im Raum zu kontrollieren.</li>
+                    <li>Erwägen Sie die Verwendung einer Klavierhülle, um das Instrument vor Staub und Umwelteinflüssen zu schützen.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a href="imprint.html">Impressum</a>
+        <a href="privacypolicy.html">Datenschutzrichtlinie</a>
+    </footer>
+    <script>
+        function menu() {
+            let ham = document.getElementById("ham");
+            let links = document.getElementById("links");
+            links.classList.toggle("offen");
+            ham.classList.toggle("open");
+        }
+    </script>
+</body>
+</html>

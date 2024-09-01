@@ -1,0 +1,413 @@
+body {
+  font-family: sans-serif, Cambria;
+  background-image: url(img/weißhin1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  text-align: center;
+  overflow-x: hidden;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav a.current {
+  position: relative;
+  border-color: beige;
+  color: black;
+  box-shadow: 0 0 40px 40px beige inset, 0 0 0 0 beige;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 20px;
+}
+nav a {
+  position: relative;
+  border-color: lightblue;
+  color: black;
+  box-shadow: 0 0 40px 40px lightblue inset, 0 0 0 0 lightblue;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 20px;
+}
+nav a:hover {
+  box-shadow: 0 0 10px 0 skyblue inset, 0 0 10px 4px skyblue;
+  border-color: skyblue;
+}
+.current:hover {
+  box-shadow: 0 0 10px 0 rgb(255, 255, 180) inset,
+    0 0 10px 4px rgb(255, 255, 180);
+  border-color: beige;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+  margin-top: 25px;
+}
+
+h1 {
+  position: absolute;
+  text-shadow: black 0vh 0vh 1vh;
+  font-size: 50px;
+  top: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ham {
+  scale: 0;
+}
+
+footer {
+  background-color: rgb(128, 128, 128, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-bottom: 0;
+  margin-left: -10px;
+  background-color: rgb(0, 0, 0, 0.3);
+  width: 100vw;
+  margin-top: 150px;
+}
+footer a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+@media (max-width: 1050px) {
+  .ham {
+    scale: 1;
+    position: relative;
+    display: flex;
+    top: 10px;
+    right: 20px;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    justify-content: space-around;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .ham .line {
+    background-color: black;
+    border-radius: 3px;
+    width: 100%;
+    height: 4px;
+    transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+  }
+
+  .ham.open .line:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: white;
+  }
+
+  .ham.open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .ham.open .line:nth-child(3) {
+    position: absolute;
+    transform: rotate(-45deg);
+    background-color: white;
+  }
+
+  .links {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 0vw;
+    margin-top: 0px;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    gap: 10px;
+    padding: 10px;
+    padding-top: 60px;
+    transform-origin: top;
+    transition: transform 0.5s ease-out;
+    transform: scaleY(0);
+    width: 80vw;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  .links.offen {
+    transform: scaleY(1);
+  }
+
+  .links a {
+    position: relative;
+    border-color: lightblue;
+    color: black;
+    box-shadow: 0 0 40px 40px lightblue inset, 0 0 0 0 lightblue;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    padding: 10px;
+    border-radius: 10px;
+
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px;
+  }
+  button {
+    border: none;
+    border-radius: 10px;
+    margin-left: 30px;
+  }
+
+  nav a:hover {
+    box-shadow: 0 0 10px 0 skyblue inset, 0 0 10px 4px skyblue;
+    border-color: skyblue;
+    color: white;
+  }
+  nav a.current {
+    border-color: beige;
+    color: black;
+    box-shadow: 0 0 40px 40px beige inset, 0 0 0 0 beige;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px;
+  }
+  nav a.current:hover {
+    box-shadow: 0 0 10px 0 beige inset, 0 0 10px 4px beige;
+    border-color: beige;
+    background-color: transparent;
+    color: white;
+  }
+}
+main {
+  margin-top: 200px;
+}
+#note-display {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.kapitel,
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.korrektundinkorrekt {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.keyboard {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.key {
+  width: 40px;
+  height: 200px;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.white {
+  background: white;
+  border: 1px solid #000;
+  position: relative;
+  z-index: 0;
+}
+
+.black {
+  background: black;
+  width: 30px;
+  height: 120px;
+  margin: 0 -15px;
+  z-index: 1;
+  color: white;
+}
+
+.key:hover {
+  background-color: #ddd;
+}
+
+.key.correct {
+  background-color: green !important;
+}
+
+.key.incorrect {
+  background-color: red !important;
+}
+.kapitel {
+  background: rgba(0, 0, 0, 0.3);
+  padding-bottom: 50px;
+  font-size: 1.5rem;
+  margin-top: -150px;
+}
+
+.kapitel a {
+  color: black;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin-top: 1em;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.5em;
+  margin-left: -0.5em;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+    border-bottom: 3px solid lightblue;
+    border-radius: 1em;
+    bottom: 0.3em;
+    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  &:before {
+    width: 25%;
+    transform-origin: left;
+  }
+
+  &:after {
+    width: 60%;
+    right: 0;
+    transform: translateX(110%);
+  }
+
+  &:hover:before {
+    transform: scaleX(0.3);
+  }
+
+  &:hover:after {
+    transform: translateX(0);
+  }
+}
+
+.howToReadSheetMusic img {
+  width: 100vw;
+  max-width: 1000px;
+  margin-bottom: 30px;
+}
+h1 {
+  text-align: center;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: large;
+}
+#noteValue ul,
+#musicalRests ul, #timeSignature ul, #clefs ul, #accidentials ul{
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 20px;
+}
+.musicalRests img, .clefs img{
+  width: 100vw;
+  margin-left: 0;
+}
+.abstand, p {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+#noteValue .original {
+  width: 100vw;
+}
+.replacement, .replacementt {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .original {
+    display: none;
+  }
+  .replacement {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+}
+@media (max-width: 800px) {
+  .originall {
+    display: none;
+  }
+  .replacementt {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+}
+.warnung {
+  margin-top: 150px;
+}
+.howToReadSheetMusic table {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+h2{
+  margin-top: 100px;
+  text-decoration: underline;
+}
+h3{
+  margin-top: 40px;
+}
+.clef-symbol {
+  font-size: 2em;
+  margin-right: 10px;
+}
+#clefImg{
+  max-width: 500px;
+}
+#stepsImg{
+  width: 100vw;
+  max-width: 1000px;
+}
+#accidentalsImg{
+  width: 100vw;
+  max-width: 1200px;
+}

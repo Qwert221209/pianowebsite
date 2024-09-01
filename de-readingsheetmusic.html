@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noten lesen</title>
+    <link rel="stylesheet" href="readingsheetmusic.css" />
+    <meta name="description" content="Diese Website lehrt dich, wie man Klavier spielt. Du wirst auch lernen, wie man Noten liest, welche Stücke du spielen solltest und vieles mehr. Du benötigst kein Konto für diese Website und sie ist kostenlos zu nutzen!">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="ham" id="ham" onclick="menu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+            <div class="links" id="links">
+                <a href="de.html">Startseite</a>
+                <a href="de-basics.html">Grundlagen</a>
+                <a class="current" href="de-readingsheetmusic.html">Noten lesen</a>
+                <a href="de-pieces.html">Stücke</a>
+                <a href="de-motivation.html">Motivation</a>
+                <a href="de-equipment.html">Ausrüstung</a>
+                <a href="de-communitysavings.html">Gemeinschaftsersparnisse</a>
+            </div>
+        </nav>
+        <h1>Noten lesen</h1>
+        <p class="abstand warnung"><strong>Wichtige Information: </strong>Auf dieser Website benutze ich das <strong><em>deutsche Notensystem!</em></strong> Im Vergleich zum amerikanischen Notensystem verwendet das deutsche System statt des Buchstabens b den Buchstaben h und statt des b-Vorzeichens den Buchstaben b!</p>
+    </header>
+    <main>
+        <section class="kapitel">
+            <h2>Kapiteln</h2>
+            <a href="#howToReadSheetMusic">Wie liest man Noten?</a>
+            <a href="#noteValue">Notenwerte</a>
+            <a href="#musicalRests">Musikalische Pausen</a>
+            <a href="#clefs">Schlüssel</a>
+            <a href="#timeSignature">Taktarten</a>
+            <a href="#steps">Halbtöne und Ganztöne</a>
+            <a href="#accidentials">Vorzeichen</a>
+            <a href="#howToPracticeReadingSheetMusic">Wie übt man das Notenlesen?</a>
+            <a href="#game">Spiel</a>
+        </section>
+        <section class="howToReadSheetMusic" id="howToReadSheetMusic">
+            <h2>Wie liest man Noten?</h2>
+            <p>Jede Note hat einen Namen und einen bestimmten Tastenanschlag auf dem Klavier. Die Zuordnung der musikalischen Noten zu den Klaviertasten erfolgt logisch <strong>nach rechts:</strong></p>
+            <img src="img/noteCMakiertundNotenVonCBisH.jpg" alt="Fehler beim Laden"/>
+            <p>Hier ist eine Übersicht der Tastenbezeichnungen auf der Klaviatur:</p>
+            <img src="img/klaviaturMitNamen.jpg" alt="Fehler beim Laden"/>
+            <p>Versuche, die folgende Melodie sehr langsam mit der rechten Hand zu spielen. Hilf dir mit <a href="#howToReadSheetMusic">diesem</a> Bild. Die Zahlen unter den Noten geben den Finger an, mit dem du die Note spielen sollst:</p>
+            <table>
+                <tr>
+                    <td>Daumen</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Zeigefinger</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Mittelfinger</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Ringfinger</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Kleiner Finger</td>
+                    <td>5</td>
+                </tr>
+            </table>
+            <img src="img/easyMelody.png" alt="Fehler beim Laden">
+        </section>
+        <section id="noteValue">
+            <h2>Notenwerte</h2>
+            <p class="abstand">Die Notenwerte auf dem Klavier beziehen sich auf die Dauer, für die eine Note gehalten oder gespielt wird. Jeder Notenwert hat eine spezifische Zeitdauer im Verhältnis zum Takt der Musik, der durch die <br><a href="#timeSignature">Taktart</a> bestimmt wird. Hier ist eine Übersicht der häufigsten Notenwerte:</p>
+            <h3>1. Ganze Note</h3>
+            <ul>
+                <li><strong>Symbol:</strong> Ein offenes Oval ohne Hals.</li>
+                <li><strong>Dauer:</strong> Der längste Notenwert, der vier Schläge im Viervierteltakt (4/4) hält.</li>
+                <li><strong>Auf dem Klavier:</strong> Bei einer ganzen Note hältst du die Taste für vier Schläge gedrückt.</li>
+            </ul>
+            <h3>2. Halbe Note</h3>
+            <ul>
+                <li><strong>Symbol:</strong> Ein offenes Oval mit Hals.</li>
+                <li><strong>Dauer:</strong> Hält zwei Schläge im Viervierteltakt.</li>
+                <li><strong>Auf dem Klavier:</strong> Drücke und halte die Taste für zwei Schläge.</li>
+            </ul>
+            <h3>3. Viertelnote</h3>
+            <ul>
+                <li><strong>Symbol:</strong> Ein ausgefülltes Oval mit Hals.</li>
+                <li><strong>Dauer:</strong> Hält einen Schlag im Viervierteltakt.</li>
+                <li><strong>Auf dem Klavier:</strong> Drücke und halte die Taste für einen Schlag.</li>
+            </ul>
+            <h3>4. Achtelnote</h3>
+            <ul>
+                <li><strong>Symbol:</strong> Ein ausgefülltes Oval mit Hals und einem Fähnchen.</li>
+                <li><strong>Dauer:</strong> Hält einen halben Schlag im Viervierteltakt.</li>
+                <li><strong>Auf dem Klavier:</strong> Drücke und halte die Taste für einen halben Schlag. Oft in Paaren oder Gruppen gespielt.</li>
+            </ul>
+            <h3>5. Sechzehntelnote</h3>
+            <ul>
+                <li><strong>Symbol:</strong> Ein ausgefülltes Oval mit Hals und zwei Fähnchen.</li>
+                <li><strong>Dauer:</strong> Hält einen Viertelschlag im Viervierteltakt.</li>
+                <li><strong>Auf dem Klavier:</strong> Drücke und halte die Taste für einen Viertelschlag. Diese Noten werden normalerweise schnell gespielt.</li>
+            </ul>
+            <h3>6. Punktierte Noten</h3>
+            <ul>
+                <li><strong>Symbol:</strong> Ein Punkt, der direkt nach einer Note steht.</li>
+                <li><strong>Wirkung:</strong> Der Punkt verlängert die Dauer der Note um die Hälfte ihres ursprünglichen Werts.</li>
+                <li><strong>Beispiel:</strong> Eine punktierte Halbe Note dauert drei Schläge (zwei Schläge für die halbe Note + ein zusätzlicher Schlag).</li>
+            </ul>
+            <h3>7. Gebundene Noten</h3>
+            <ul>
+                <li><strong>Symbol:</strong> Eine gebogene Linie, die zwei Noten mit demselben Ton verbindet.</li>
+                <li><strong>Wirkung:</strong> Die Noten werden als eine einzige Note mit kombinierter Dauer gespielt.</li>
+                <li><strong>Auf dem Klavier:</strong> Halte die Taste für die gesamte Dauer der gebundenen Noten.</li>
+            </ul>
+            <p>Hier ist eine Übersicht über die Notenwerte:</p>
+            <img src="img/noteValue.png" alt="Fehler beim Laden" class="original">
+            <img src="img/noteValueHalf1.png" alt="Fehler beim Laden" class="replacement">
+            <img src="img/noteValueHalf2.png" alt="Fehler beim Laden" class="replacement">
+            <p>Alle oben gezeigten Musikabschnitte (Ganze Note, Halbe Note, Viertelnote, Achtelnote, Sechzehntelnote) erfordern die gleiche Zeit zum Spielen (vier Schläge).</p>
+        </section>
+        
+        <section class="musicalRests" id="musicalRests">
+            <h2>Musikalische Pausen</h2>
+            <ul>
+                <p>Ruhesymbole zeigen Stille an und haben Äquivalente zu den entsprechenden Notenwerten:</p>
+                <li><strong>Ganze Pause:</strong> Stille für vier Schläge.</li>
+                <li><strong>Halbe Pause:</strong> Stille für zwei Schläge.</li>
+                <li><strong>Viertelpause:</strong> Stille für einen Schlag.</li>
+                <li><strong>Achtelpause:</strong> Stille für einen halben Schlag.</li>
+                <li><strong>Sechzehntelpause:</strong> Stille für einen Viertelschlag.</li>
+            </ul>
+            <img src="img/musicalRests.png" alt="Fehler beim Laden" class="original">
+            <img src="img/musicalRestsHalf1.png" alt="Fehler beim Laden" class="replacement">
+            <img src="img/musicalRestsHalf2.png" alt="Fehler beim Laden" class="replacement">
+            <p>Die Notation und Dauer der Pausen sind die gleichen wie bei den Notenwerten. Sie sind wichtig, um die Rhythmik eines Stückes korrekt zu interpretieren.</p>
+        </section>
+        <section class="clefs" id="clefs">
+            <h2>Schlüssel</h2>
+            <p>Der <strong>Schlüssel</strong> gibt an, wie die Noten auf der Notenlinie gelesen werden müssen. Die wichtigsten Schlüssel sind:</p>
+            <h3>1. Violinschlüssel</h3>
+            <ul>
+                <li>Zeigt an, dass die Noten auf der Notenlinie in der hohen Lage gelesen werden.</li>
+                <li>Meistens für die rechte Hand auf dem Klavier verwendet.</li>
+                <li>Hier befindet sich die Note G auf der zweiten Linie von unten.</li>
+            </ul>
+            <h3>2. Bassschlüssel</h3>
+            <ul>
+                <li>Zeigt an, dass die Noten auf der Notenlinie in der tiefen Lage gelesen werden.</li>
+                <li>Meistens für die linke Hand auf dem Klavier verwendet.</li>
+                <li>Hier befindet sich die Note F auf der vierten Linie von unten.</li>
+            </ul>
+            <h3>3. Alt- und Tenorschlüssel</h3>
+            <ul>
+                <li>Weniger häufig auf dem Klavier, aber wichtig für andere Instrumente.</li>
+                <li>Der Alt-Schlüssel zeigt die Note C auf der dritten Linie von unten an.</li>
+                <li>Der Tenorschlüssel zeigt die Note C auf der vierten Linie von unten an.</li>
+            </ul>
+            <img src="img/clefs.png" alt="Fehler beim Laden" class="original">
+        </section>
+        <section class="timeSignature" id="timeSignature">
+            <h2>Taktarten</h2>
+            <p>Die <strong>Taktart</strong> bestimmt, wie viele Schläge pro Takt vorhanden sind und welche Notenwerte einen Schlag erhalten:</p>
+            <ul>
+                <li><strong>4/4 Takt:</strong> Vier Schläge pro Takt, jeder Schlag ist eine Viertelnote.</li>
+                <li><strong>3/4 Takt:</strong> Drei Schläge pro Takt, jeder Schlag ist eine Viertelnote. Bekannt aus Walzern.</li>
+                <li><strong>2/4 Takt:</strong> Zwei Schläge pro Takt, jeder Schlag ist eine Viertelnote.</li>
+                <li><strong>6/8 Takt:</strong> Sechs Schläge pro Takt, jeder Schlag ist eine Achtelnote.</li>
+            </ul>
+            <img src="img/timeSignature.png" alt="Fehler beim Laden" class="original">
+            <p>Die Taktart gibt die Struktur des Musikstücks vor und beeinflusst den Rhythmus und die Betonung.</p>
+        </section>
+        <section class="steps" id="steps">
+            <h2>Halbtöne und Ganztöne</h2>
+            <p>Auf dem Klavier sind die Schritte zwischen den Tasten in <strong>Halbtonschritte</strong> und <strong>Ganztöne</strong> unterteilt:</p>
+            <ul>
+                <li><strong>Ein Halbton:</strong> Der kleinste Abstand zwischen zwei benachbarten Tasten auf dem Klavier.</li>
+                <li><strong>Ein Ganzton:</strong> Zwei Halbtöne, z.B. von C nach D.</li>
+            </ul>
+            <img src="img/steps.png" alt="Fehler beim Laden">
+            <p>Die Erkennung von Halbtönen und Ganztönen ist entscheidend für das Verständnis der Musiktheorie und der Klavierharmonie.</p>
+        </section>
+        <section class="accidentials" id="accidentials">
+            <h2>Vorzeichen</h2>
+            <p>Vorzeichen ändern die Tonhöhe einer Note und sind wichtig für die richtige Interpretation der Musik:</p>
+            <ul>
+                <li><strong>Kreuz (#):</strong> Erhöht die Note um einen Halbton.</li>
+                <li><strong>B (b):</strong> Senkt die Note um einen Halbton.</li>
+                <li><strong>Doppelkorridor (#):</strong> Erhöht die Note um zwei Halbtöne.</li>
+                <li><strong>Doppel-B (b):</strong> Senkt die Note um zwei Halbtöne.</li>
+            </ul>
+            <img src="img/accidentials.png" alt="Fehler beim Laden">
+            <p>Vorzeichen sind notwendig, um die richtige Tonhöhe der Noten zu gewährleisten und Veränderungen innerhalb eines Stückes anzuzeigen.</p>
+        </section>
+        <section class="howToPracticeReadingSheetMusic" id="howToPracticeReadingSheetMusic">
+            <h2>Wie übt man das Notenlesen?</h2>
+            <p>Das Üben des Notenlesens erfordert Geduld und Ausdauer:</p>
+            <ul>
+                <li>Beginne mit einfachen Stücken und arbeite dich zu komplexeren vor.</li>
+                <li>Übe regelmäßig, um deine Fähigkeiten zu verbessern.</li>
+                <li>Verwende Notenübungsblätter und -tools, um deine Fähigkeiten zu testen.</li>
+                <li>Spiele die Noten mit verschiedenen Geschwindigkeiten, um dein Tempo zu verbessern.</li>
+            </ul>
+            <p>Ein nützliches Tool zum Üben ist das <a href="#game">Notenlesespiel</a>.</p>
+        </section>
+        <section class="game" id="game">
+            <h2>Spiel</h2>
+            <p>Das <strong>Notenlesespiel</strong> ist ein interaktives Tool, um deine Notenlesefähigkeiten zu verbessern:</p>
+            <ul>
+                <li>Es stellt zufällig Notenfragen.</li>
+                <li>Du kannst die richtige Taste auf dem Klavier auswählen.</li>
+                <li>Es gibt Feedback und Punkte für richtige Antworten.</li>
+            </ul>
+            <p><a href="game.html">Hier geht's zum Spiel!</a></p>
+        </section>
+    </main>
+    <footer>
+        <a href="legaldisclosure.html">Datenschutzerklärung</a>
+        <a href="privacypolicy.html">Impressum</a>
+    </footer>
+    <script src="readingsheetmusic.js"></script>
+</body>
+</html>

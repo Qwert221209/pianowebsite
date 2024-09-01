@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahorros Comunitarios</title>
+    <link rel="stylesheet" href="communitysavings.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="ham" id="ham" onclick="menu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="links" id="links">
+          <a href="es.html">Inicio</a>
+          <a href="es-basics.html">Fundamentos</a>
+          <a href="es-readingsheetmusic.html">Lectura de partituras</a>
+          <a href="es-pieces.html">Piezas</a>
+          <a href="es-motivation.html">Motivación</a>
+          <a href="es-equipment.html">Equipo</a>
+          <a class="current" href="es-communitysavings.html">Ahorros comunitarios</a>
+        </div>
+      </nav>
+      <h1>Ahorros Comunitarios</h1>
+      <p>
+        En esta sección puedes donar para diferentes propósitos y mejorar esta
+        página web. El progreso de los objetivos de ahorro se actualiza cada día
+        a las 20:00 (CET).
+      </p>
+    </header>
+    <main>
+      <section class="reihe">
+        <section class="savingGoal1">
+          <h2>Sección nueva sobre Teoría Musical</h2>
+          <p>Objetivo de ahorro: 300€</p>
+          <p>Ahorros actuales: 0€</p>
+          <button>Donar</button>
+        </section>
+
+        <section class="savingGoal2">
+          <h2>Sección nueva sobre Preparación para Actuaciones</h2>
+          <p>Objetivo de ahorro: 200€</p>
+          <p>Ahorros actuales: 0€</p>
+          <button>Donar</button>
+        </section>
+      </section>
+      <section class="reihe">
+        <section class="savingGoal1">
+          <h2>Sección nueva sobre Práctica Eficiente</h2>
+          <p>Objetivo de ahorro: 200€</p>
+          <p>Ahorros actuales: 0€</p>
+          <button>Donar</button>
+        </section>
+
+        <section class="savingGoal2">
+          <h2>Sección nueva sobre Improvisación</h2>
+          <p>Objetivo de ahorro: 300€</p>
+          <p>Ahorros actuales: 0€</p>
+          <button>Donar</button>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <a href="imprint.html">Aviso Legal</a>
+      <a href="privacypolicy.html">Política de Privacidad</a>
+    </footer>
+    <script>
+      function menu() {
+        let ham = document.getElementById("ham");
+        let links = document.getElementById("links");
+        links.classList.toggle("offen");
+        ham.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>

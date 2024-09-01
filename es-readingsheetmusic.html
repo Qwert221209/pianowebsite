@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leer Notas</title>
+    <link rel="stylesheet" href="readingsheetmusic.css" />
+    <meta
+      name="description"
+      content="Este sitio web te enseña cómo tocar el piano. También aprenderás cómo leer partituras, qué piezas tocar y mucho más. No necesitas una cuenta para este sitio web y es gratuito para usarlo!"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="ham" id="ham" onclick="menu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="links" id="links">
+          <a href="es.html">Inicio</a>
+          <a href="es-basics.html">Fundamentos</a>
+          <a class="current" href="es-readingsheetmusic.html">Leer Notas</a>
+          <a href="es-pieces.html">Piezas</a>
+          <a href="es-motivation.html">Motivación</a>
+          <a href="es-equipment.html">Equipamiento</a>
+          <a href="es-communitysavings.html">Ahorros comunitarios</a>
+        </div>
+      </nav>
+      <h1>Leer Notas</h1>
+      <p class="abstand warnung">
+        <strong>Información Importante:</strong> ¡En este sitio web uso el
+        <strong><em>sistema de notación alemana!</em></strong> En comparación
+        con el sistema de notación estadounidense, el sistema alemán usa la
+        letra h en lugar de la b y la letra b en lugar del bemol!
+      </p>
+    </header>
+    <main>
+      <section class="kapitel">
+        <h2>Capítulos</h2>
+        <a href="#howToReadSheetMusic">¿Cómo leer partituras?</a>
+        <a href="#noteValue">Valores de las Notas</a>
+        <a href="#musicalRests">Pausas Musicales</a>
+        <a href="#clefs">Claves</a>
+        <a href="#timeSignature">Compases</a>
+        <a href="#steps">Semitonos y Tonos</a>
+        <a href="#accidentials">Alteraciones</a>
+        <a href="#howToPracticeReadingSheetMusic"
+          >¿Cómo practicar la lectura de partituras?</a
+        >
+        <a href="#game">Juego</a>
+      </section>
+      <section class="howToReadSheetMusic" id="howToReadSheetMusic">
+        <h2>¿Cómo leer partituras?</h2>
+        <p>
+          Cada nota tiene un nombre y una tecla específica en el piano. La
+          asignación de las notas musicales a las teclas del piano se realiza de
+          manera lógica <strong>de derecha a izquierda:</strong>
+        </p>
+        <img src="img/noteCMakiertundNotenVonCBisH.jpg" alt="Error al cargar" />
+        <p>Aquí tienes una visión general de las teclas en el teclado:</p>
+        <img src="img/klaviaturMitNamen.jpg" alt="Error al cargar" />
+        <p>
+          Intenta tocar la siguiente melodía muy lentamente con la mano derecha.
+          Ayúdate con <a href="#howToReadSheetMusic">esta</a> imagen. Los
+          números debajo de las notas indican el dedo con el que debes tocar la
+          nota:
+        </p>
+        <table>
+          <tr>
+            <td>Pulgar</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Índice</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Medio</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Anular</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Meñique</td>
+            <td>5</td>
+          </tr>
+        </table>
+        <img src="img/easyMelody.png" alt="Error al cargar" />
+      </section>
+      <section id="noteValue">
+        <h2>Valores de las Notas</h2>
+        <p class="abstand">
+          Los valores de las notas en el piano se refieren a la duración durante
+          la cual una nota se mantiene o se toca. Cada valor de nota tiene una
+          duración específica en relación con el compás de la música, que está
+          determinado por la <br /><a href="#timeSignature">firma del compás</a
+          >. Aquí tienes una visión general de los valores de nota más comunes:
+        </p>
+        <h3>1. Nota Entera</h3>
+        <ul>
+          <li><strong>Símbolo:</strong> Un óvalo abierto sin plica.</li>
+          <li>
+            <strong>Duración:</strong> El valor de nota más largo, que dura
+            cuatro tiempos en un compás de 4/4.
+          </li>
+          <li>
+            <strong>En el piano:</strong> Mantén la tecla presionada durante
+            cuatro tiempos.
+          </li>
+        </ul>
+        <h3>2. Nota Media</h3>
+        <ul>
+          <li><strong>Símbolo:</strong> Un óvalo abierto con plica.</li>
+          <li>
+            <strong>Duración:</strong> Dura dos tiempos en un compás de 4/4.
+          </li>
+          <li>
+            <strong>En el piano:</strong> Presiona y mantén la tecla durante dos
+            tiempos.
+          </li>
+        </ul>
+        <h3>3. Nota Cuartena</h3>
+        <ul>
+          <li><strong>Símbolo:</strong> Un óvalo relleno con plica.</li>
+          <li>
+            <strong>Duración:</strong> Dura un tiempo en un compás de 4/4.
+          </li>
+          <li>
+            <strong>En el piano:</strong> Presiona y mantén la tecla durante un
+            tiempo.
+          </li>
+        </ul>
+        <h3>4. Nota Corchea</h3>
+        <ul>
+          <li>
+            <strong>Símbolo:</strong> Un óvalo relleno con plica y una
+            banderita.
+          </li>
+          <li>
+            <strong>Duración:</strong> Dura medio tiempo en un compás de 4/4.
+          </li>
+          <li>
+            <strong>En el piano:</strong> Presiona y mantén la tecla durante
+            medio tiempo. A menudo se tocan en pares o grupos.
+          </li>
+        </ul>
+        <h3>5. Nota Cabezona</h3>
+        <ul>
+          <li>
+            <strong>Símbolo:</strong> Un óvalo relleno con plica y dos
+            banderitas.
+          </li>
+          <li>
+            <strong>Duración:</strong> Dura un cuarto de tiempo en un compás de
+            4/4.
+          </li>
+          <li>
+            <strong>En el piano:</strong> Presiona y mantén la tecla durante un
+            cuarto de tiempo. Estas notas suelen tocarse rápidamente.
+          </li>
+        </ul>
+        <h3>6. Notas con Punto</h3>
+        <ul>
+          <li><strong>Símbolo:</strong> Un punto que sigue a una nota.</li>
+          <li>
+            <strong>Efecto:</strong> El punto prolonga la duración de la nota en
+            la mitad de su valor original.
+          </li>
+          <li>
+            <strong>Ejemplo:</strong> Una nota media con punto dura tres tiempos
+            (dos tiempos para la nota media + un tiempo adicional).
+          </li>
+        </ul>
+        <h3>7. Notas Ligadas</h3>
+        <ul>
+          <li>
+            <strong>Símbolo:</strong> Una línea curva que conecta dos notas del
+            mismo tono.
+          </li>
+          <li>
+            <strong>Efecto:</strong> Las notas se tocan como una sola nota con
+            duración combinada.
+          </li>
+          <li>
+            <strong>En el piano:</strong> Mantén la tecla durante toda la
+            duración de las notas ligadas.
+          </li>
+        </ul>
+        <p>Aquí tienes una visión general de los valores de las notas:</p>
+        <img src="img/noteValue.png" alt="Error al cargar" class="original" />
+        <img
+          src="img/noteValueHalf1.png"
+          alt="Error al cargar"
+          class="replacement"
+        />
+        <img
+          src="img/noteValueHalf2.png"
+          alt="Error al cargar"
+          class="replacement"
+        />
+        <p>
+          Todos los fragmentos musicales mostrados anteriormente (Nota Entera,
+          Nota Media, Nota Cuartena, Nota Corchea, Nota Cabezona) requieren el
+          mismo tiempo para tocar (cuatro tiempos).
+        </p>
+      </section>
+
+      <section class="musicalRests" id="musicalRests">
+        <h2>Pausas Musicales</h2>
+        <ul>
+          <p>
+            Los símbolos de pausa indican silencio y tienen equivalentes a los
+            valores de notas correspondientes:
+          </p>
+          <li>
+            <strong>Pausa Entera:</strong> Silencio durante cuatro tiempos.
+          </li>
+          <li><strong>Pausa Media:</strong> Silencio durante dos tiempos.</li>
+          <li><strong>Pausa Cuartena:</strong> Silencio durante un tiempo.</li>
+          <li>
+            <strong>Pausa Corchea:</strong> Silencio durante medio tiempo.
+          </li>
+          <li>
+            <strong>Pausa Cabezona:</strong> Silencio durante un cuarto de
+            tiempo.
+          </li>
+        </ul>
+        <img
+          src="img/musicalRests.png"
+          alt="Error al cargar"
+          class="original"
+        />
+        <img
+          src="img/musicalRestsHalf1.png"
+          alt="Error al cargar"
+          class="replacement"
+        />
+        <img
+          src="img/musicalRestsHalf2.png"
+          alt="Error al cargar"
+          class="replacement"
+        />
+        <p>
+          La notación y duración de las pausas son las mismas que las de los
+          valores de las notas. Son importantes para interpretar correctamente
+          el ritmo de una pieza.
+        </p>
+      </section>
+      <section class="clefs" id="clefs">
+        <h2>Claves</h2>
+        <p>
+          La <strong>clave</strong> indica cómo se deben leer las notas en el
+          pentagrama. Las claves más importantes son:
+        </p>
+        <h3>1. Clave de Sol</h3>
+        <ul>
+          <li>
+            Indica que las notas en el pentagrama se leen en la tonalidad alta.
+          </li>
+          <li>Se utiliza principalmente para la mano derecha en el piano.</li>
+          <li>
+            Aquí se encuentra la nota Sol en la segunda línea desde abajo.
+          </li>
+        </ul>
+        <h3>2. Clave de Fa</h3>
+        <ul>
+          <li>
+            Indica que las notas en el pentagrama se leen en la tonalidad baja.
+          </li>
+          <li>Se utiliza principalmente para la mano izquierda en el piano.</li>
+          <li>Aquí se encuentra la nota Fa en la cuarta línea desde abajo.</li>
+        </ul>
+        <h3>3. Clave de Do y Clave de Tenor</h3>
+        <ul>
+          <li>
+            Menos común en el piano, pero importante para otros instrumentos.
+          </li>
+          <li>
+            La Clave de Do indica la nota Do en la tercera línea desde abajo.
+          </li>
+          <li>
+            La Clave de Tenor indica la nota Do en la cuarta línea desde abajo.
+          </li>
+        </ul>
+        <img src="img/clefs.png" alt="Error al cargar" class="original" />
+      </section>
+      <section class="timeSignature" id="timeSignature">
+        <h2>Compases</h2>
+        <p>
+          La <strong>firma del compás</strong> determina cuántos tiempos hay por
+          compás y qué valores de notas reciben un tiempo:
+        </p>
+        <ul>
+          <li>
+            <strong>Compás 4/4:</strong> Cuatro tiempos por compás, cada tiempo
+            es una nota cuartena.
+          </li>
+          <li>
+            <strong>Compás 3/4:</strong> Tres tiempos por compás, cada tiempo es
+            una nota cuartena. Conocido en los valses.
+          </li>
+          <li>
+            <strong>Compás 2/4:</strong> Dos tiempos por compás, cada tiempo es
+            una nota cuartena.
+          </li>
+          <li>
+            <strong>Compás 6/8:</strong> Seis tiempos por compás, cada tiempo es
+            una nota corchea.
+          </li>
+        </ul>
+        <img
+          src="img/timeSignature.png"
+          alt="Error al cargar"
+          class="original"
+        />
+        <p>
+          La firma del compás establece la estructura de la pieza musical y
+          afecta el ritmo y el acento.
+        </p>
+      </section>
+      <section class="steps" id="steps">
+        <h2>Semitonos y Tonos</h2>
+        <p>
+          En el piano, los pasos entre las teclas se dividen en
+          <strong>semitonos</strong> y <strong>tonos</strong>:
+        </p>
+        <ul>
+          <li>
+            <strong>Un Semitono:</strong> La distancia más pequeña entre dos
+            teclas adyacentes en el piano.
+          </li>
+          <li>
+            <strong>Un Tono:</strong> Dos semitonos, por ejemplo, de Do a Re.
+          </li>
+        </ul>
+        <img src="img/steps.png" alt="Error al cargar" />
+        <p>
+          El reconocimiento de semitonos y tonos es crucial para entender la
+          teoría musical y la armonía del piano.
+        </p>
+      </section>
+      <section class="accidentials" id="accidentials">
+        <h2>Alteraciones</h2>
+        <p>
+          Las alteraciones cambian la altura de una nota y son importantes para
+          la interpretación correcta de la música:
+        </p>
+        <ul>
+          <li><strong>Sostenido (#):</strong> Eleva la nota un semitono.</li>
+          <li><strong>Bemol (b):</strong> Baja la nota un semitono.</li>
+          <li>
+            <strong>Doble sostenido (x):</strong> Eleva la nota dos semitonos.
+          </li>
+          <li>
+            <strong>Doble bemol (bb):</strong> Baja la nota dos semitonos.
+          </li>
+        </ul>
+        <img src="img/accidentials.png" alt="Error al cargar" />
+        <p>
+          Las alteraciones son necesarias para asegurar la altura correcta de
+          las notas y para mostrar cambios dentro de una pieza.
+        </p>
+      </section>
+      <section
+        class="howToPracticeReadingSheetMusic"
+        id="howToPracticeReadingSheetMusic"
+      >
+        <h2>¿Cómo practicar la lectura de partituras?</h2>
+        <p>
+          Practicar la lectura de partituras requiere paciencia y perseverancia:
+        </p>
+        <ul>
+          <li>Comienza con piezas simples y avanza a otras más complejas.</li>
+          <li>Practica regularmente para mejorar tus habilidades.</li>
+          <li>
+            Utiliza hojas de ejercicios y herramientas para evaluar tus
+            habilidades.
+          </li>
+          <li>
+            Toca las notas a diferentes velocidades para mejorar tu ritmo.
+          </li>
+        </ul>
+        <p>
+          Una herramienta útil para practicar es el
+          <a href="#game">juego de lectura de notas</a>.
+        </p>
+      </section>
+      <section class="game" id="game">
+        <h2>Juego</h2>
+        <p>
+          El <strong>juego de lectura de notas</strong> es una herramienta
+          interactiva para mejorar tus habilidades de lectura de notas:
+        </p>
+        <ul>
+          <li>Plantea preguntas de notas al azar.</li>
+          <li>Puedes seleccionar la tecla correcta en el piano.</li>
+          <li>
+            Proporciona retroalimentación y puntos por respuestas correctas.
+          </li>
+        </ul>
+        <p><a href="game.html">¡Aquí está el juego!</a></p>
+      </section>
+    </main>
+    <footer>
+      <a href="imprint.html">Aviso legal</a>
+      <a href="privacypolicy.html">Política de privacidad</a>
+    </footer>
+    <script src="readingsheetmusic.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ausrüstung</title>
+    <link rel="stylesheet" href="equipment.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button class="ham" id="ham" onclick="menu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="links" id="links">
+          <a href="de.html">Startseite</a>
+          <a href="de-basics.html">Grundlagen</a>
+          <a href="de-readingsheetmusic.html">Noten lesen</a>
+          <a href="de-pieces.html">Stücke</a>
+          <a href="de-motivation.html">Motivation</a>
+          <a class="current" href="de-equipment.html">Ausrüstung</a>
+          <a href="de-communitysavings.html">Gemeinschaftsersparnisse</a>
+        </div>
+      </nav>
+      <h1>Ausrüstung und Klaviere</h1>
+    </header>
+    <main>
+      <h2 class="anfang">Beste Klaviere nach Preis</h2>
+      <h3>Bestes Klavier für ca. 250€</h3>
+      <p>Casio CT-S300 <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h3>Bestes Klavier für ca. 500€</h3>
+      <p>Yamaha P-145 <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h3>Bestes Klavier für ca. 750€</h3>
+      <p>Classic Cantabile DP-A 610 <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h3>Bestes Klavier für ca. 1000€</h3>
+      <p>Yamaha ARIUS YDP-145 <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h3>Bestes Klavier für ca. 2000€</h3>
+      <p>Classic Cantabile GP-A 810 <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h2>Klavierbänke nach Preis</h2>
+      <h3>Beste Klavierbank für ca. 60€</h3>
+      <p>SONGMICS Klavierhocker höhenverstellbar <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h3>Beste Klavierbank für ca. 150€</h3>
+      <p>REDCAMP höhenverstellbare Klavierbank mit Stauraum <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h2>Bester Metronom nach Preis</h2>
+      <h3>Bester Metronom für ca. 10€</h3>
+      <p>Alnicov Mini Digital Metronom <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h3>Bester Metronom für ca. 30€</h3>
+      <p>Mechanisches Metronom mit Glocke, LEKATO <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h2>Beste Kopfhörer nach Preis</h2>
+      <h3>Beste Kopfhörer für ca. 50€</h3>
+      <p>Yamaha HPH-100B Kopfhörer <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h3>Beste Kopfhörer für ca. 100€</h3>
+      <p>Yamaha HPH-150B <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h3>Beste Kopfhörer für ca. 200€</h3>
+      <p>Yamaha HPH-MT7 Studio-Kopfhörer <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h2>Beste Klavierpedale nach Preis</h2>
+      <h3>Bestes Pedal für 10€</h3>
+      <p>Rockjam Sustain Pedal <a href="#">Kaufen bei Amazon</a></p>
+      
+      <h3>Bestes Pedal für 150€</h3>
+      <p>Roland Keyboard Dreifach-Pedaleinheit <a href="#">Kaufen bei Amazon</a></p>
+      
+    </main>
+
+    <footer>
+      <a href="legaldisclosure.html">Impressum</a>
+      <a href="privacypolicy.html">Datenschutzerklärung</a>
+    </footer>
+    <script>
+      function menu() {
+        let ham = document.getElementById("ham");
+        let links = document.getElementById("links");
+        links.classList.toggle("offen");
+        ham.classList.toggle("offen");
+      }
+    </script>
+  </body>
+</html>

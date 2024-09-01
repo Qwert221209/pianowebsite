@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Diese Webseite zeigt dir, wie du Klavier lernen kannst, wie du Notenblätter liest, welche Stücke du lernen solltest und vieles mehr. Es ist keine Anmeldung erforderlich und die Webseite ist kostenlos nutzbar!"
+    />
+    <title>lernpiano.online</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Online Klavier lernen</h1>
+      <h2>Keine Anmeldung erforderlich, kostenlos nutzbar!</h2>
+      <select name="language" id="language" onchange="navigateToPage()">
+        <option value="index.html">English</option>
+        <option value="de.html" selected>Deutsch</option>
+        <option value="es.html">Español</option>
+      </select>
+    </header>
+    <main>
+      <nav>
+        <div class="links">
+          <button onclick="window.location.href='de-basics.html';">
+            Grundlagen
+          </button>
+          <p class="txtlinks">Falls du noch nie eine Klavierstunde genommen hast</p>
+        </div>
+
+        <div class="rechts">
+          <button onclick="window.location.href='de-readingsheetmusic.html';">
+            Notenblätter lesen
+          </button>
+          <p class="txtrechts">Falls du Noten nicht flüssig lesen kannst</p>
+        </div>
+
+        <div class="vertical">
+          <button onclick="window.location.href='de-pieces.html';">Stücke</button>
+          <p>
+            Falls du die Grundlagen abgeschlossen hast und Noten flüssig lesen kannst
+          </p>
+        </div>
+
+        <div class="vertical">
+          <button onclick="window.location.href='de-motivation.html';">
+            Motivation
+          </button>
+          <p>Falls du keine Lust mehr hast, Klavier zu lernen</p>
+        </div>
+
+        <div class="vertical">
+          <button onclick="window.location.href='de-equipment.html';">
+            Ausstattung
+          </button>
+          <p>Ausstattung, die gut zu haben ist</p>
+        </div>
+
+        <div class="vertical">
+          <button onclick="window.location.href='de-communitysavings.html';">
+            Gemeinschaftsersparnisse
+          </button>
+          <p>Um mich zu unterstützen</p>
+        </div>
+      </nav>
+    </main>
+    <footer>
+      <a href="imprint.html">Impressum</a>
+      <a href="privacypolicy.html">Datenschutzerklärung</a>
+    </footer>
+    <script>
+function navigateToPage() {
+  var selectElement = document.getElementById("language");
+  var selectedValue = selectElement.value;
+  window.location.href = selectedValue;
+}
+    </script>
+  </body>
+</html>
